@@ -9,6 +9,29 @@ Job Data Cleaning & Analytics Pipeline
 This project demonstrates a real-world end-to-end data cleaning and aggregation pipeline using PySpark on Databricks.
 It handles multiple messy job datasets, cleans them, merges them, and produces aggregated insights across multiple layers:
 
+## 📂 Datasets
+
+The project merges multiple job posting datasets from different sources, including:
+
+1. **Arshkons Data Engineer Postings**  
+   - CSV containing job postings with columns like `job_id`, `company_name`, `title`, `description`, `normalized_salary`, etc.  
+   - Source: [Arshkons Job Market Dataset](#) *(https://www.kaggle.com/datasets/arshkon/linkedin-job-postings)*
+
+2. **Job Descriptions Data**  
+   - CSV with detailed job descriptions, work types, and salary ranges.  
+   - Source: [Job Descriptions Dataset](#)*(https://www.kaggle.com/datasets/ravindrasinghrana/job-description-dataset)
+
+3. **JobStreet Dataset**  
+   - Large dataset of job postings from JobStreet, including salaries, company info, skills, and job types.  
+   - Source: [JobStreet All Job Dataset](#) *(https://www.kaggle.com/datasets/azraimohamad/jobstreet-all-job-dataset)
+
+4. **dfall_clean.csv**  
+   - Pre-cleaned CSV dataset with job listings, locations, and salaries.  
+   - Source: Internal/aggregated dataset from previous cleaning efforts or public dataset compilation.
+
+> ⚠️ Note: The actual CSV files are not included in this repository due to size restrictions and licensing. These sources are referenced for reproducibility and context.
+
+
 Bronze Layer: Raw merged data from multiple sources
 
 Silver Layer: Cleaned and normalized data (skills extraction, salaries, job types, years)
