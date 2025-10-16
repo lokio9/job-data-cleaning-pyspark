@@ -1,1 +1,7 @@
+pyspark
+pandas
+geotext
+country_converter
+geocoding
+requests
 
